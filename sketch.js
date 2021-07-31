@@ -67,16 +67,16 @@ function draw() {
 
 function keyPressed() {
 
-	if(KeyCode === RIGHT_ARROW){
+	if(keyCode === RIGHT_ARROW){
 		fairy.x = fairy.x + 40;
 	}
 
-	if(KeyCode  ===   LEFT_ARROW){
+	if(keyCode  ===   LEFT_ARROW){
 		fairy.Y = fairy.Y + 40;
 	}
 
 	if (keyCode === DOWN_ARROW) {
-		star.Body.setStatic(starBody,false); 
+		Matter.Body.setStatic(starBody,false); 
 	}
 
 	//writw code to move fairy left and right
